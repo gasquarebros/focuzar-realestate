@@ -1,0 +1,29 @@
+ngb-carousel {
+    height: 100%;
+    outline: none;
+}
+
+ngb-carousel .wrapper {
+    position: relative;
+    height: 0;
+    padding-top: 55%; /* Keep ratio for 900x500 images */
+  }
+  
+  ngb-carousel .wrapper>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .choose-unit {
+    background: #ff7d24;
+    border: none;
+    width: 90%;
+    height: 30px;
+    outline: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  

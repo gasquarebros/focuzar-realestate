@@ -1,0 +1,420 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { 
+    margin: 0; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol"; 
+    background: none !important; 
+    overflow-y: hidden;
+}
+html {
+    background: url(/assets/images/bg.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+p {
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+ngb-carousel .wrapper {
+    position: relative;
+    height: 0;
+    padding-top: 55%; /* Keep ratio for 900x500 images */
+}
+
+ngb-carousel .wrapper>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: calc(100vh - 88px);
+}
+ngb-carousel .carousel-inner {
+    height: 100%;
+    outline: none;
+}
+ngb-carousel .carousel-caption {
+    padding-bottom: 30px;
+}
+ngb-carousel .carousel-indicators {
+    bottom: -10px;
+}
+ngb-carousel .carousel-item {
+    height: 90vh;
+}
+ngb-carousel .wrapper {
+    height: 100%;
+}
+
+.icon-navi-common {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 45px;
+}
+
+.icon-navi-home-01 {
+	background-image: url(/assets/images/icons/Home/education.png)
+}
+
+.icon-navi-home-02 {
+	background-image: url(/assets/images/icons/Home/industry.png)
+}
+
+.icon-navi-home-03 {
+	background-image: url(/assets
+    .icon-navi-home-01 {
+    background-image: url(/assets/images/icons/Home/education.png)
+}
+
+.icon-navi-home-02 {
+    background-image: url(/assets/images/icons/Home/industry.png)
+}
+
+.icon-navi-home-03 {
+    background-image: url(/assets/images/icons/Home/railway.png)
+}
+
+.icon-navi-home-04 {
+    background-image: url(/assets/images/icons/Home/street.png)
+}
+
+.icon-navi-home-05 {
+    background-image: url(/assets/images/icons/Home/techpark.png)
+}
+
+.icon-navi-home-06 {
+    background-image: url(/assets/images/icons/Home/themepark.png)
+}
+
+.icon-navi-home-07 {
+    background-image: url(/assets/images/icons/Home/building.png)
+}
+
+.icon-navi-home-08 {
+    background-image: url(/assets/images/icons/Home/hospital.png)
+}
+
+.icon-navi-home-09 {
+    background-image: url(/assets/images/icons/Home/theater.png)
+}
+
+.icon-navi-home-10 {
+    background-image: url(/assets/images/icons/Home/meditation.png)
+}
+
+.icon-navi-home-11 {
+    background-image: url(/assets/images/icons/Home/OpenAirTheater.png)
+}
+
+.icon-navi-home-12 {
+    background-image: url(/assets/images/icons/Home/park.png)
+}
+
+.icon-navi-home-13 {
+    background-image: url(/assets/images/icons/Home/stage.png)
+}
+
+.icon-navi-home-14 {
+    background-image: url(/assets/images/icons/Home/Tree.png)
+}
+
+.icon-navi-home-15 {
+    background-image: url(/assets/images/icons/Home/airport.png)
+}
+
+.icon-navi-home-16 {
+    background-image: url(/assets/images/icons/Home/fort.png)
+}
+
+.icon-navi-home-17 {
+    background-image: url(/assets/images/icons/Home/store.png)
+}
+
+.icon-navi-home-18 {
+    background-image: url(/assets/images/icons/Home/zoo.png)
+}
+
+.icon-navi-home-19 {
+    background-image: url(/assets/images/icons/Home/AMPHITHEATRE.png)
+}
+
+.icon-navi-home-20 {
+    background-image: url(/assets/images/icons/Home/BARBEQUEDECK.png)
+}
+
+.icon-navi-home-21 {
+    background-image: url(/assets/images/icons/Home/CHESSCOURT.png)
+}
+
+.icon-navi-home-22 {
+    background-image: url(/assets/images/icons/Home/CHILDRENSPLAYAREA.png)
+}
+
+.icon-navi-home-23 {
+    background-image: url(/assets/images/icons/Home/CLIMBINGWALL.png)
+}
+
+.icon-navi-home-24 {
+    background-image: url(/assets/images/icons/Home/CLUBHOUSE.png)
+}
+
+.icon-navi-home-25 {
+    background-image: url(/assets/images/icons/Home/CRICKETPRACTICEPITCH.png)
+}
+
+.icon-navi-home-26 {
+    background-image: url(/assets/images/icons/Home/DRYDECKFOUNTAIN.png)
+}
+
+.icon-navi-home-27 {
+    background-image: url(/assets/images/icons/Home/FORESTTRAIL.png)
+}
+
+.icon-navi-home-28 {
+    background-image: url(/assets/images/icons/Home/GAZEBO.png)
+}
+
+.icon-navi-home-29 {
+    background-image: url(/assets/images/icons/Home/HOPSCOTCH.png)
+}
+
+.icon-navi-home-30 {
+    background-image: url(/assets/images/icons/Home/KABBADICOURT.png)
+}
+
+.icon-navi-home-31 {
+    background-image: url(/assets/images/icons/Home/LANDSCAPECOURTYARD.png)
+}
+
+.icon-navi-home-32 {
+    background-image: url(/assets/images/icons/Home/LINEARFOREST.png)
+}
+
+.icon-navi-home-33 {
+    background-image: url(/assets/images/icons/Home/LONGJUMP.png)
+}
+
+.icon-navi-home-34 {
+    background-image: url(/assets/images/icons/Home/MEDITATIONDECK.png)
+}
+
+.icon-navi-home-35 {
+    background-image: url(/assets/images/icons/Home/MULTICOURT1.png)
+}
+
+.icon-navi-home-36 {
+    background-image: url(/assets/images/icons/Home/OLDFOLKSCORNER.png)
+}
+
+.icon-navi-home-37 {
+    background-image: url(/assets/images/icons/Home/PAWPARK.png)
+}
+
+.icon-navi-home-38 {
+    background-image: url(/assets/images/icons/Home/SKATINGRINK.png)
+}
+
+.icon-navi-home-39 {
+    background-image: url(/assets/images/icons/Home/SOFTSCAPE.png)
+}
+
+.icon-navi-home-40 {
+    background-image:
+        url(/assets/images/icons/Home/SWIMMINGPOOLANDKIDSPOOL.png)
+}
+
+.icon-navi-home-41 {
+    background-image: url(/assets/images/icons/Home/AmphiTheatre.png)
+}
+
+.icon-navi-home-42 {
+    background-image: url(/assets/images/icons/Home/Archery.png)
+}
+
+.icon-navi-home-43 {
+    background-image: url(/assets/images/icons/Home/BasketBallCourt.png)
+}
+
+.icon-navi-home-44 {
+    background-image: url(/assets/images/icons/Home/ChildrensPlayArea.png)
+}
+
+.icon-navi-home-45 {
+    background-image: url(/assets/images/icons/Home/Cricketnet.png)
+}
+
+.icon-navi-home-46 {
+    background-image: url(/assets/images/icons/Home/FitnessZone.png)
+}
+
+.icon-navi-home-47 {
+    background-image: url(/assets/images/icons/Home/HangingGarden.png)
+}
+
+.icon-navi-home-48 {
+    background-image: url(/assets/images/icons/Home/HealthCultureClub.png)
+}
+
+.icon-navi-home-49 {
+    background-image: url(/assets/images/icons/Home/HighJumpwithSandpit.png)
+}
+
+.icon-navi-home-50 {
+    background-image: url(/assets/images/icons/Home/JoggingTrack.png)
+}
+
+.icon-navi-home-51 {
+    background-image: url(/assets/images/icons/Home/KidsPool.png)
+}
+
+.icon-navi-home-52 {
+    background-image: url(/assets/images/icons/Home/MeditationZone.png)
+}
+
+.icon-navi-home-53 {
+    background-image: url(/assets/images/icons/Home/MultiCourt.png)
+}
+
+.icon-navi-home-54 {
+    background-image: url(/assets/images/icons/Home/MultiCourt2.png)
+}
+
+.icon-navi-home-55 {
+    background-image: url(/assets/images/icons/Home/OldFolksCorner.png)
+}
+
+.icon-navi-home-56 {
+    background-image: url(/assets/images/icons/Home/SwimmingPool.png)
+}
+
+.icon-navi-home-57 {
+    background-image: url(/assets/images/icons/Home/Waterbody.png)
+}
+
+.icon-navi-home-58 {
+    background-image: url(/assets/images/icons/Home/forest.png)
+}
+
+.icon-navi-home-59 {
+    background-image: url(/assets/images/icons/Home/centre.png)
+}
+
+.icon-navi-home-60 {
+    background-image: url(/assets/images/icons/Home/Park.png)
+}
+
+.icon-navi-home-61 {
+    background-image: url(/assets/images/icons/Home/Middle.png)
+}
+
+.icon-navi-home-62 {
+    background-image: url(/assets/images/icons/Home/apartment.png)
+}
+
+.icon-navi-home-63 {
+    background-image: url(/assets/images/icons/Home/busterminal.png)
+}
+
+.icon-navi-home-64 {
+    background-image: url(/assets/images/icons/Home/golden.png)
+}
+
+.icon-navi-home-65 {
+    background-image: url(/assets/images/icons/Home/Metro.png)
+}
+
+.icon-navi-01 {
+	background-image: url(/assets/images/icons/01.png)
+}
+
+.icon-navi-02 {
+	background-image: url(/assets/images/icons/02.png)
+}
+
+.icon-navi-03 {
+	background-image: url(/assets/images/icons/03.png)
+}
+
+.icon-navi-04 {
+	background-image: url(/assets/images/icons/04.png)
+}
+
+.icon-navi-05 {
+	background-image: url(/assets/images/icons/05.png)
+}
+
+.icon-navi-06 {
+	background-image: url(/assets/images/icons/06.png)
+}
+
+.icon-navi-07 {
+	background-image: url(/assets/images/icons/07.png)
+}
+
+.icon-navi-08 {
+	background-image: url(/assets/images/icons/08.png)
+}
+
+.icon-navi-09 {
+	background-image: url(/assets/images/icons/09.png)
+}
+
+.icon-navi-10 {
+	background-image: url(/assets/images/icons/10.png)
+}
+
+.icon-navi-11 {
+	background-image: url(/assets/images/icons/11.png)
+}
+
+.icon-navi-12 {
+	background-image: url(/assets/images/icons/crocodilepark.png)
+}
+
+.icon-navi-13 {
+	background-image: url(/assets/images/icons/education.png)
+}
+
+.icon-navi-14 {
+	background-image: url(/assets/images/icons/hospital.png)
+}
+
+.icon-navi-15 {
+	background-image: url(/assets/images/icons/beach.png)
+}
+
+.icon-navi-16 {
+	background-image: url(/assets/images/icons/itpark.png)
+}
+
+.icon-navi-17 {
+	background-image: url(/assets/images/icons/movie.png)
+}
+
+.mat-dialog-container {
+    padding:0px !important;
+}
+
+@media screen  and (max-width: 900px) {
+    ngb-carousel .carousel-item {
+        height: 83vh !important;
+    }
+    ngb-carousel .wrapper img {
+        height: 81vh !important;
+    }
+    ngb-carousel .carousel-caption {
+        padding-bottom: 0px !important;
+        bottom: 5%;
+    }
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+

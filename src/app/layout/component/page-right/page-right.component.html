@@ -1,0 +1,30 @@
+<div class="full-screen-icon-container">
+    <i class="fa fa-expand" (click)="fullscreen()"></i>
+</div>
+
+<div class="title-section-right">
+    <div class="sidebar-top-icon rotate-90deg">
+        <h3 class="page-title text-uppercase">Tower</h3>
+    </div>
+</div>
+<div class="scroller-section">
+    <app-sidebar-scroller 
+        [backgroundColor]="backgroundScrollerColor"
+        [hoverBackgroundColor]="hoverbackgroundScrollerColor"
+        [textColor] = "textScrollerColor"
+        [hoverTextColor] = "hovertextScrollerColor"
+        (selectedElement)="selectElement($event)"
+    ></app-sidebar-scroller>
+</div>
+
+<div class="sidebar-bottom-icon">
+    <div class="slider-icon">
+        <i class="fa fa-question-circle"></i>
+    </div>
+    <div class="powerdby-logo">
+        <a href="#"><img src="/assets/images/vbhc-logo.png" class="Focuz" alt="VBHC"></a>
+    </div>
+    <div class="powerdby-logo">
+        <a href="#"><img src="/assets/images/powered.png" class="Focuz" alt=""></a>
+    </div>
+</div>

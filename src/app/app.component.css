@@ -1,0 +1,25 @@
+.invalid-layout-section-app {
+    display: none;
+    color: #fff;
+    content: 'Rotate to view in Landscape Mode ';
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    background: #333;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    margin: 0 auto;
+}
+.layout-section-app {
+    display: block;
+}
+
+@media screen and (orientation: portrait) {
+    .invalid-layout-section-app {
+        display: table;
+    }    
+    .layout-section-app {
+        display: none;
+    }
+}

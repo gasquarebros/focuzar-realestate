@@ -1,0 +1,14 @@
+.view-360deg1 {
+    position: absolute;
+    top: 45%;
+    z-index: 1;
+    right: 12%;
+}
+
+.icon-location {
+    width: 75px;
+    height: 75px;
+    background: url(/assets/images/location_50px.gif) no-repeat center;
+    display: inline-block;
+    vertical-align: middle;
+}

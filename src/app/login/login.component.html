@@ -1,0 +1,91 @@
+<div class="model-section">
+    <div class="model-header" *ngIf="!error && !success">
+        <h5 class="modal-title">{{title}}</h5>
+        <button type="button" (click)="closePopup()" class="close" >
+            <span aria-hidden="true">×</span>
+        </button>
+    </div>
+    <div class="model-body">
+        <div class="error-section" *ngIf="error">
+            <div class="small-close-icon small-headr-icon ">
+                <span class="small-x-mark">
+                    <span class="small-x-mark-left small-x-mark-line"></span>
+                    <span class="small-x-mark-right small-x-mark-line"></span>
+                </span>
+            </div>
+            <h2 class="error-text">{{error}}</h2>
+            <button class="error-ok-btn" (click)="hideError()">ok</button>
+        </div>
+
+        <div class="success-section" *ngIf="success">
+            <div class="small-tick-icon small-headr-icon ">
+                <mat-icon class="success-icon">done</mat-icon>
+            </div>
+            <h2 class="success-text">User</h2>
+            <h2 class="success-text-title">{{success}}</h2>
+            <button class="error-ok-btn" (click)="showOtpSection()">ok</button>
+        </div>
+
+        <div class="login-section" *ngIf="!showSignup && !showSupport && !showOtp && !error && !success">
+            <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+                <div class="form-group">
+                    <label for="signinphone">Enter Mobile Number</label> 
+                    <div *ngIf="mobile.invalid && (mobile.dirty || mobile.touched)" class="error">
+                        <div *ngIf="mobile.errors.required">
+                            Mobile Number is Mandatory
+                        </div>
+                        <div *ngIf="mobile.errors.pattern || mobile.errors.minlength">
+                            Please enter valid Mobile Number
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" formControlName="mobile" required  pattern="[0-9]*" placeholder="Mobile Number" autofocus="">
+                        
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary text-uppercase" type="submit">
+                        <span class="label" *ngIf="!isProcessing">Sign In</span>
+                        <span class="spinner" *ngIf="isProcessing"><img src="../../assets/images/loader1.gif"></span>
+                    </button>
+                </div> 
+            </form>
+        </div>
+        <div class="signup-section" *ngIf="showSignup">
+            <app-signup (signupOutput)="showSignupSuccess($event)"></app-signup>
+        </div>
+        <div class="signup-section" *ngIf="showSupport">
+            <app-support></app-support>
+        </div>
+        <div class="otp-section" *ngIf="showOtp">
+            <form [formGroup]="otpForm" id="otpform">
+                <div class="form-group">
+                    <div *ngIf="otp.invalid && (otp.dirty || otp.touched)" class="error">
+                        <div *ngIf="otp.errors.required">
+                            OTP Number is Mandatory
+                        </div>
+                        <div *ngIf="otp.errors.pattern || otp.errors.minlength">
+                            Invalid OTP Number
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" formControlName="otp" required  placeholder="Enter OTP" autofocus="">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary" type="submit">Verify</button>
+                </div>
+                <span class="otp-msg">Didn't Receive OTP?
+                    <button [disabled]="resendOtpBehavior" class="otp-msg-resend" (click)="resendOtp()">Resend OTP</button> <span
+                    class="otp-msg-counter pull-right" ng-if="enableresend==true && counter > 0">00:<span>{{counter | number:'2.0'}}</span></span>
+                </span>
+            </form>
+        </div>
+    </div>
+    <div class="model-footer" *ngIf="!showSupport && !error && !success">
+        <div class="text-center" *ngIf="!showSignup">
+            <a class="signup-model text-orange curptr " (click)="openSignup()">Sign Up</a> to access
+        </div>
+        <div class="showSignup" *ngIf="showSignup">
+            <div class="text-right ">
+                <a class=" text-orange curptr" (click)="openSupport()">Need help?</a>
+            </div>
+        </div>
+    </div>
+</div>

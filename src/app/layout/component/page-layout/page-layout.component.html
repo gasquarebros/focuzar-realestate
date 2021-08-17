@@ -1,0 +1,32 @@
+<div #fs class="page-layout" id="page-layout">
+    <div class="page-header" [ngClass]="{'visibleTop': isTopMenuVisible}">
+        <app-page-header></app-page-header>
+    </div>
+    <div class="page-content container-fluid" [ngClass]="{'page-no-top-header': !isTopMenuVisible, 'page-top-header': isTopMenuVisible}">
+        <div class="page-left-section sidebar">
+            <app-page-left 
+                [popupOver]="" 
+                [popupOverText]="" 
+                (selectedElement)="hoveredItem($event)"></app-page-left>
+        </div>
+        <div class="page-middle-section">
+            <div style="width:100%; height:100%">
+                <div class="overlay-animate-top" id="animateAminity">
+                    <span class="animate-top-text">Choose your Tower</span>
+                </div>
+                <div class="arrows"></div>
+                <app-page-middle-top-right></app-page-middle-top-right>
+                <router-outlet></router-outlet>
+                <app-page-middle-threesixtyview></app-page-middle-threesixtyview>
+            </div>  
+        </div>
+        <div class="page-right-section sidebar sidebar-right">
+            <app-page-right 
+                (fullScreenChange)="toggleFullscreen($event)"
+                (selectedItem)="hoveredItem($event)"></app-page-right>
+        </div>
+    </div>
+    <div class="page-footer">
+        <app-page-footer></app-page-footer>
+    </div>
+</div>

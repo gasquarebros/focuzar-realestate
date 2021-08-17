@@ -1,0 +1,38 @@
+.custom-navbar {
+	background: 0 0;
+}
+.navbar-show {
+	margin: 0 auto;
+}
+.custom-navbar .nav-item:last-child .nav-link:after {
+	display: none
+}
+.custom-navbar .nav-link:after {
+	top: 50%;
+	content: '';
+	height: 3px;
+	background-color: #fff;
+	position: absolute;
+	z-index: -1;
+}
+.custom-navbar .nav-link {
+	background-color: #fff;
+	min-width: 90px;
+	padding: 0;
+	color: rgba(255,255,255,1);
+	position: relative;
+	text-align: center;
+	color: #000;
+	position: relative;
+	z-index: 1;
+}
+.custom-navbar .nav-link.active {
+	background-color: #FF6600;
+	color: #fff;
+}
+.custom-navbar .nav-link.active:after {
+	background-color: #FF6600;
+}
+.navbar-nav .nav-link{
+	white-space: nowrap;
+}

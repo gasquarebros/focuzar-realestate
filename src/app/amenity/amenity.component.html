@@ -1,0 +1,6 @@
+<div class="overlay-maindiv">
+    <div class="individual-div" (mouseover)="onMapHover(proj)" *ngFor="let proj of pointsMap" [ngClass]="{'hoverdiv': hoverID === proj.id}" [ngStyle]="{'clip-path':'polygon(' + proj.points + ')'}">
+        {{hoverID}} {{proj.id}}
+    </div>
+</div>
+<img #myimage src="https://focuz-repo.s3.amazonaws.com/reales/VBHC/palm2MP.jpg" >

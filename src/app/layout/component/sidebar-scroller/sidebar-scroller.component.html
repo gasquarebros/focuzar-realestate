@@ -1,0 +1,9 @@
+<div class="side-scroller">
+	<ng-scrollbar class="virtual-scroll" thumbClass="white-scrollbars">
+		<cdk-virtual-scroll-viewport [itemSize]="50" scrollViewport class="example-viewport">
+			<div *cdkVirtualFor="let item of items" class="example-item" (mouseover)="showPopover(item)" (mouseout)="hidePopover(item)" [ngStyle]="!(item.hover) ? {'background': backgroundColor ? backgroundColor: '', 'color': textColor ? textColor:''} : {'background': hoverBackgroundColor ? hoverBackgroundColor: '', 'color': hoverTextColor ? hoverTextColor:''} ">
+				{{item.name}}
+			</div>
+		</cdk-virtual-scroll-viewport>
+	</ng-scrollbar>
+</div>

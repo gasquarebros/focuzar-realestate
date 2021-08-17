@@ -1,0 +1,25 @@
+img {
+    width: 100%;
+    height: 100%;
+}
+.hoverdiv {
+    background-color: red;
+}
+.overlay-maindiv {
+    width: calc( 100vw - 180px);
+    height: 100%;
+    top: 8%;
+    position: absolute;
+}
+.individual-div {
+    width: 100%; 
+    height:100%; 
+    position:absolute; 
+    top:0;
+}
+
+@media screen and (max-width: 767px) {
+    .overlay-maindiv {
+        width: calc( 100vw - 120px);
+    }
+}

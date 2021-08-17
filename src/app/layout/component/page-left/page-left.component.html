@@ -1,0 +1,23 @@
+<div class="sidebar-top-icon rotate-90deg ">
+    <h3 class="page-title text-uppercase">{{projectTitle}}</h3>
+</div>
+
+<div class="left-scroller">
+	<div class="showInnerSection popuphover-left" *ngIf="popupOver">
+		<div class="card-header custom-card-header bg-orange p-0 m-0">
+			<h6 class="text-center p-sm-1 m-0 ng-binding">{{popupOverText}}</h6>
+		</div>
+	</div>
+	<ng-scrollbar class="virtual-scroll" thumbClass="white-scrollbars">
+		<cdk-virtual-scroll-viewport [itemSize]="50" scrollViewport class="example-viewport">
+			<div *cdkVirtualFor="let item of items" class="example-item" (mouseover)="showPopover(item)" (mouseout)="hidePopover()">
+				<i class="icon-navi-common {{item.icon}}"></i>
+			</div>
+		</cdk-virtual-scroll-viewport>
+	</ng-scrollbar>
+</div>
+
+
+<div class="sidebar-bottom-icon">
+	<img src="/assets/images/funnel.png" class="icon-filter">
+</div>

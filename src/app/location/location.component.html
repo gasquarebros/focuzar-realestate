@@ -1,0 +1,25 @@
+<!--
+    <google-map
+height="100%"
+width="100%"
+[zoom]="zoom"
+[center]="center"
+id="map"
+[options]="options">
+
+    <map-marker #somemarker="mapMarker"  *ngFor="let markerPosition of markers" 
+        [position]="markerPosition.position"
+        [options]="markerPosition.options"  
+        [label]="markerPosition.label" 
+        [title]="markerPosition.title"
+        (mapClick)="openInfoWindow(somemarker, markerPosition)"
+        (mapMouseover)="showHoverWindow(somemarker, markerPosition)"
+        (mapMouseout)="hideHoverWindow(somemarker, markerPosition)"
+        >
+    </map-marker>
+    <map-info-window >
+        <h2 style="border-bottom: 1px solid #ccc;">{{markerTitle}}</h2><i style="display: block; text-align: center;"><b>{{markerContent}}</b></i>
+    </map-info-window>
+
+</google-map>-->
+<div id="map"></div>

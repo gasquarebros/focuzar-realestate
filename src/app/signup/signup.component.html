@@ -1,0 +1,60 @@
+<form [formGroup]="signupForm" (ngSubmit)="onSignup()">
+    <div class="form-group">
+        <label for="name" class="col-sm-3">Name</label> 
+        <div class="col-sm-6">
+            <div *ngIf="name.invalid && (name.dirty || name.touched)" class="error">
+                <div *ngIf="name.errors.required">
+                    Username is Mandatory
+                </div>
+                <div *ngIf="name.errors.pattern">
+                    Alphabets only allowed
+                </div>
+            </div>
+            <input type="text" class="form-control" formControlName="name" required placeholder="Name" autofocus="">
+        </div>
+            
+    </div>
+
+    <div class="form-group">
+        <label for="signinphone" class="col-sm-3">Mobile Number</label> 
+        <div class="col-sm-6">
+            
+            <div class="col-sm-3 mobile-code">
+                <input type="text" class="form-control" formControlName="mobileCode" placeholder="+91" autofocus="">
+            </div>
+            <div class="col-sm-6 mobile">
+                <div *ngIf="mobile.invalid && (mobile.dirty || mobile.touched)" class="error">
+                    <div *ngIf="mobile.errors.required">
+                        Mobile Number is Mandatory
+                    </div>
+                    <div *ngIf="mobile.errors.pattern || mobile.errors.minlength">
+                        Invalid Mobile Number
+                    </div>
+                </div>
+                <input type="text" class="form-control" formControlName="mobile" required placeholder="Mobile Number" autofocus="">
+            </div>
+        </div>
+            
+    </div>
+    <div class="form-group">
+        <label for="signinphone" class="col-sm-3">Email</label> 
+        <div class="col-sm-6">
+            <div *ngIf="email.invalid && (email.dirty || email.touched)" class="error">
+                <div *ngIf="email.errors.required">
+                    Email is Mandatory
+                </div>
+                <div *ngIf="email.errors.pattern">
+                    Invalid Email
+                </div>
+            </div>
+            <input type="text" class="form-control" formControlName="email" required placeholder="Email" autofocus="">
+        </div>
+    </div>
+    <div class="form-group terms custom-control custom-checkbox">
+        <input class="custom-control-input form-control" id="policyagree" formControlName="terms" type="checkbox" checked="">
+        <label class="custom-control-label" for="policyagree">By Signing up you agree to our Terms and Conditions</label>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary text-uppercase" type="submit"><span class="label">Sign Up</span><span class="ladda-spinner"></span></button>
+    </div> 
+</form>

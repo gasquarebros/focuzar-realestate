@@ -1,0 +1,189 @@
+
+.rotate-90deg {
+    -moz-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.sidebar-top-icon {
+    position: relative;
+    top: 26px;
+}
+
+
+.sidebar-top-icon .page-title {
+    position: static;
+    text-align: left;
+}
+
+
+.page-title {
+    color: #fff;
+    margin: 0;
+    text-align: left;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 50px;
+}
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.left-scroller {
+    height: calc(100vh - 320px);
+    margin-top: 100px;
+    width: 100%;
+    color: white;
+    padding-left: 13px;
+}
+ng-scrollbar.virtual-scroll {
+    /*--scrollbar-size: 8px;*/
+    --scrollbar-thumb-color: white !important;
+    /*--scrollbar-hover-size: 10px;*/
+    /*--scrollbar-track-color: rgba(255,255, 255, 1) !important;
+    /*--scrollbar-border-radius: 10px;
+    /*margin: 1em;
+    max-height: 200px;
+    border-radius: 6px;
+    border: 1px solid white;
+    overflow: hidden;*/
+}
+.example-viewport {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    
+}
+
+.example-item {
+    display: inline-block;
+    height: 45px;
+}
+
+.example-item:hover {
+    background-color: #FF6600 !important;
+    border-raidus: none !important;
+    border: 1px solid #007bff;
+}
+
+.showInnerSection {
+    position: absolute;
+    top: 55px;
+    width: 300px;
+    z-index: 1;
+    left: 90px;
+}
+.card-header {
+    color: #000;
+    text-transform: uppercase;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #dee2e6;
+    text-align: left;
+}
+.bg-orange h6 {
+    color: #fff !important;
+}
+.bg-orange {
+    background-color: #ff6600;
+}
+.text-center {
+    text-align: center !important;
+}
+
+.sidebar-bottom-icon {
+    margin: 0 auto;
+    display: block;
+    bottom: 28px;
+    position: absolute;
+    left: 23px;
+}
+.sidebar-bottom-icon .icon-filter {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+@media screen and (max-height: 280px) and (orientation: landscape) {
+	.sidebar-top-icon {
+		top: 30px;
+	}
+}
+@media (min-width: 567px) {
+    .page-title {
+        font-size: 15px;
+    }
+    
+    .sidebar-bottom-icon {
+        bottom: 5px;
+        width: 35px;
+        height: 35px;
+        left: 12px;
+    }
+    ng-scrollbar.virtual-scroll {
+        --scrollbar-thumb-color: gray !important;
+    }
+}
+
+@media ( min-width :992px) {
+    .sidebar-top-icon {
+		left: -10px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+    .left-scroller {
+        height: calc(100vh - 203px);
+        margin-top: 80px;
+        padding-left: 0px;
+    }
+    .sidebar-top-icon {
+        top: 37px;
+    }
+    .showInnerSection {
+        top: 36px;
+        left: 60px;
+    }
+    
+}
+
+@media ( max-width : 999px) and (orientation: landscape) {
+	.booking .sidebar-top-icon {
+		top: 0 !important;
+		left: -85px !important;
+	}
+}
+
+@media screen and (min-width:768px) and (max-width: 1199px) {
+    .sidebar-bottom-icon {
+        left: 26px;
+    }
+}
+@media ( min-width : 1000px) and (max-width: 1279px) {
+	.booking .sidebar-top-icon {
+		top: 0 !important;
+		left: -85px !important;
+	}
+}
+@media ( min-width :1200px) {
+    .sidebar-top-icon {
+        right: 10px !important;
+        left: -10px !important;
+    }
+    .booking .sidebar-top-icon {
+        right: 10px !important;
+        left: -75px !important;
+    }
+    .page-title {
+        font-size: 20px;
+    }
+    .sidebar-bottom-icon {
+        margin: 0 auto;
+        display: block;
+        bottom: 28px;
+        position: absolute;
+        left: 23px;
+        width: 45px;
+        height: 45px;
+    }
+}
